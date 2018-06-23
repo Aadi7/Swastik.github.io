@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Swastik pharma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire Swash" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+
+
+  }
+  .jumbotron h1 {
+    font-family: Berkshire Swash;
+    font-size: 78px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #36486b;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  .img-responsive {
+    width:auto;
+    height: auto;
+    max-height: 32px;
+   max-width: 250px;
+   padding-top: 0;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="logo.png" alt="swastik" class="img-responsive"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutus">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#ourproducts">OUR PRODUCTS</a></li>
+        <li><a href="#companies">COMPANIES</a></li>
+        <li><a href="#contactus">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Swastik pharma</h1>
+  <p>Expect something extra</p>
+
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="aboutus" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About us</h2><br>
+      <h4> Caring is central to the work we do and defines our responsibility to those we serve.
+      The promise of swastik pharma is in the promise that our work holds for health and life.</h4><br>
+      <p>Swastik pharma is a business in transition. New and innovative business models are in motion to make the most of emerging opportunities.
+       A new drive for growth today permeates every mind-set, process and techno-innovation within Swastik pharma.At Swastik pharma, we are looking at new ways of thinking, new ways of working and new ways to touch people’s lives.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>MISSION:</strong>We’re dedicated to fulfilling the promise of human potential, in all places, in all aspects and stages of life. We believe that health is the key to that promise. Because at our healthiest, we’re capable of achieving anything. And that’s why our pursuit of helping people achieve their best health at every life stage will never end. This is how we put that belief into practice each and every day.</h4>
+      <p><strong>VISION:</strong>We strive to earn the trust of those we serve by committing to the highest standards of quality, excellence in personal relationships, and behavior characterized by honesty, fairness and integrity.The philosophy of ‘Doing Well and Doing Good’, along with our core values of Knowledge, Action, Care & Impact have been constant in our journey and serve as guideposts to help us become the company we would like to be.
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-usd logo-small"></span>
+      <h4>BEST PRICE</h4>
+      <p>We offer best price in the market</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-check logo-small"></span>
+      <h4>BEST QUALITY</h4>
+      <p>Best quality with best price</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-gift logo-small"></span>
+      <h4>BEST SCHEME</h4>
+      <p>Amazing offers</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>SATISFACTION</h4>
+      <p>Your satisfaction is our priority</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>LICENCED</h4>
+      <p>We are genuine</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>We work very hard to satisfy your needs</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="ourproducts" class="container-fluid text-center bg-grey">
+  <h2>OUR PRODUCTS</h2><br>
+  <h4>Featured products</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="syrup.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Syrups</strong></p>
+        <p>Products of wincare</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="vitamin.jpg" alt="New York" width="400" height="300">
+        <p><strong>Multivitamin syrups</strong></p>
+        <p>Amazing looking</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="powder.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Powder</strong></p>
+        <p>One of our best products</p>
+      </div>
+    </div>
+  </div><br>
+
+  <h2>Our customer's shout out</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"The quality is super that also at a affordable price <br><span>Mukesh Jain, Pratibha medical store, Rishabhdev</span></h4>
+      </div>
+      <div class="item">
+        <h4>Products result is great.<br><span>Satish Jain, Vandana medical store, Rishabhdev</span></h4>
+      </div>
+      <div class="item">
+        <h4>Best price in the market!<br><span>Nitesh Bohara, Aadinath medical store, Rishabhdev</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="companies" class="container-fluid">
+  <div class="text-center">
+    <h2>COMPANIES</h2>
+    <h4>Choose from our best companies</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Wincare</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>ABBOTT</strong></p>
+          <p><strong>PIL</strong</p>
+          <p><strong>CADILLA</strong></p>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>ALKEM</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>WOCKHARDT</strong></p>
+          <p><strong>PARAS</strong></p>
+          <p><strong>YOURS MEDICARE</strong></p>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>CIPLA</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>LABORATE</strong></p>
+          <p><strong>INTAS</strong></p>
+          <p><strong>PARTH</strong></p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contactus" class="container-fluid bg-grey text-center">
+  <h2 class="text-center">CONTACT us</h2>
+
+      <p>Contact us and we'll get back to you</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>4 floor, Indraprastha complex</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Delhi gate, Udaipur</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Nikhil Jain-9414253153 | Sandeep Jain-9413830750</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> swastikpharma2017@gmail.com</p>
+    </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(24.586473, 73.697060);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBA1vEudr4dNlTCrHQ_iwxNUHmJf9EfUM&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Swastik pharma &copy2018</p>
+  <p>Design and coded by {Aditya Jain}-9649059368</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
